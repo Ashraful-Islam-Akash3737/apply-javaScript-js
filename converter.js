@@ -13,3 +13,13 @@ else{
 }
 
 
+
+
+// convert inch tnto feet with the help of function
+function inchToFeet (inch){
+    let feet = inch / 12;
+    return feet;
+}
+const jimsHeight = 84;
+var result = inchToFeet(jimsHeight);
+console.log(result);
