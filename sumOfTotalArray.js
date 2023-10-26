@@ -18,15 +18,16 @@ console.log(result);
 
 function getSumOfAnArrayUsingOnlyEvenNumber(numbers){
     let total = 0;
+    let evenNumbers = [];
     for(let i = 0; i < numbers.length; i++){
         const element = numbers[i];
         if(element % 2 == 1){
             continue;
         }
-        
+        evenNumbers.push(element);
         total = total + element;
     }
-    return total;
+    return total, evenNumbers;
 }
 const myNumber = [10, 38, 29, 62, 49, 50, 39, 49]
 const results =  getSumOfAnArrayUsingOnlyEvenNumber(myNumber);
