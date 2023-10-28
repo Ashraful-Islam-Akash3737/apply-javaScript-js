@@ -1,16 +1,16 @@
 // get total of an array using function
 
-function getSumOfAnArray(numbers){
-    let total = 0;
-    for(let i = 0; i < numbers.length; i++){
-        const element = numbers[i];
-        total = total + element;
-    }
-    return total;
-}
-const myNumbers = [10, 38, 29, 62, 49, 50, 39, 49]
-const result =  getSumOfAnArray(myNumbers);
-console.log(result);
+// function getSumOfAnArray(numbers){
+//     let total = 0;
+//     for(let i = 0; i < numbers.length; i++){
+//         const element = numbers[i];
+//         total = total + element;
+//     }
+//     return total;
+// }
+// const myNumbers = [10, 38, 29, 62, 49, 50, 39, 49]
+// const result =  getSumOfAnArray(myNumbers);
+// console.log(result);
 
 
 
@@ -27,7 +27,8 @@ function getSumOfAnArrayUsingOnlyEvenNumber(numbers){
         evenNumbers.push(element);
         total = total + element;
     }
-    return total, evenNumbers;
+    console.log("array is: ", evenNumbers);
+    return total;
 }
 const myNumber = [10, 38, 29, 62, 49, 50, 39, 49]
 const results =  getSumOfAnArrayUsingOnlyEvenNumber(myNumber);
